@@ -1,20 +1,14 @@
-from module_1 import add_to_cart, remove_from_cart
-from module_2 import checkout
+import module_1
+import module_2
 
 def main():
-    cart = []
-    prices = {
-        "apple": 1.0,
-        "banana": 0.5,
-        "orange": 0.75
-    }
-
-    add_to_cart(cart, "apple")
-    add_to_cart(cart, "banana")
-    remove_from_cart(cart, "orange")  # not in cart, nothing happens
-    add_to_cart(cart, "orange")
-
-    checkout(cart, prices)
+    students = [
+        {"name": "Alice", "grades": [88, 92, 79]},
+        {"name": "Bob", "grades": [75, 70, 68]},
+        {"name": "Charlie", "grades": [95, 100, 98]},
+        {"name": "Daisy", "grades": [58, 62, 55]},
+    ]
+    moduleB.process_all_students(students)  # Assuming this function is in moduleB
 
 if __name__ == "__main__":
     main()
